@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Projeto CSS3</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo Projeto">
+        <span class="brand">Projeto CSS3</span>
+      </div>
+      <nav class="navbar" aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contato</h1>
+    <p>Use o formulário ou envie um e‑mail para <a href="mailto:exemplo@dominio.com">exemplo@dominio.com</a>.</p>
+
+    <form class="form" novalidate>
+      <div class="form-row">
+        <label for="cname">Nome</label>
+        <input id="cname" name="cname" type="text" required>
+      </div>
+      <div class="form-row">
+        <label for="cemail">Email</label>
+        <input id="cemail" name="cemail" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="cmsg">Mensagem</label>
+        <textarea id="cmsg" name="cmsg" rows="6" required></textarea>
+      </div>
+      <div class="form-row actions">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 — Template genérico</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>

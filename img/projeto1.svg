@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240" role="img" aria-label="Projeto 1">
+  <rect width="400" height="240" rx="12" fill="#fff"/>
+  <rect x="16" y="16" width="368" height="120" rx="8" fill="#f1f5ff"/>
+  <text x="20" y="160" font-size="18" font-family="sans-serif" fill="#0b6efd">Projeto 1 — Card</text>
+</svg>

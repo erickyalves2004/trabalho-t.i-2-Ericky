@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projeto CSS3 - Entrega 2</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo Projeto">
+        <span class="brand">Projeto CSS3</span>
+      </div>
+
+      <nav class="navbar" aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li class="dropdown">
+            <button aria-haspopup="true" aria-expanded="false">Projetos ▾</button>
+            <ul class="submenu">
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Mockups</a></li>
+            </ul>
+          </li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Interface profissional, humana e acessível</h1>
+          <p>Template genérico com design system, grid 12-colunas, componentes e navegação responsiva — pronto para usar e adaptar.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#">Ver projetos</a>
+            <a class="btn btn-outline" href="sobre.html">Saber mais</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="img/banner.svg" alt="Ilustração do projeto">
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container">
+      <h2>Projetos em destaque</h2>
+      <div class="grid grid-12">
+        <article class="card col-4">
+          <img src="img/projeto1.svg" alt="Projeto 1">
+          <div class="card-content">
+            <h3 class="card-title">Projeto A</h3>
+            <p>Descrição breve do projeto, objetivo e tecnologias usadas. Exemplo de card responsivo.</p>
+            <div class="card-meta">
+              <span class="badge">Web</span>
+              <a class="btn btn-sm" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card col-4">
+          <img src="img/projeto2.svg" alt="Projeto 2">
+          <div class="card-content">
+            <h3 class="card-title">Projeto B</h3>
+            <p>Descrição breve do projeto, objetivo e tecnologias usadas.</p>
+            <div class="card-meta">
+              <span class="badge">Design</span>
+              <a class="btn btn-sm" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card col-4">
+          <img src="img/projeto3.svg" alt="Projeto 3">
+          <div class="card-content">
+            <h3 class="card-title">Projeto C</h3>
+            <p>Descrição breve do projeto, objetivo e tecnologias usadas.</p>
+            <div class="card-meta">
+              <span class="badge">UI</span>
+              <a class="btn btn-sm" href="#">Ver</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup container">
+      <h2>Fale comigo</h2>
+      <form class="form" novalidate>
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-row actions">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <button class="btn btn-ghost" type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 — Template genérico — feito para a Entrega 2 (CSS3)</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>

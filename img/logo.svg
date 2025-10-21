@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Logo">
+  <rect width="96" height="96" rx="18" fill="#0b6efd"/>
+  <g transform="translate(18,18)" fill="#fff">
+    <rect x="8" y="8" width="52" height="52" rx="10" opacity="0.12"/>
+    <path d="M12 40 L28 20 L44 40 Z" />
+  </g>
+</svg>

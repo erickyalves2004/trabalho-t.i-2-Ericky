@@ -1,0 +1,31 @@
+/* layout.css — grid principal e breakpoints (mín. 5 breakpoints) */
+main{padding:var(--space-4) 0}
+.site-header{background:var(--neutral-100);box-shadow:0 1px 4px rgba(0,0,0,0.04);position:sticky;top:0;z-index:50}
+.site-footer{padding:var(--space-3) 0;text-align:center;background:transparent;margin-top:var(--space-4)}
+
+/* Grid system: 12 col */
+.grid{display:flex;flex-wrap:wrap;margin:calc(var(--grid-gap) * -0.5)}
+.grid > *{padding:calc(var(--grid-gap) * 0.5)}
+.grid-12{--cols:12}
+.col-1{flex:0 0 calc(100%/12 * 1)}
+.col-2{flex:0 0 calc(100%/12 * 2)}
+.col-3{flex:0 0 calc(100%/12 * 3)}
+.col-4{flex:0 0 calc(100%/12 * 4)}
+.col-6{flex:0 0 calc(100%/12 * 6)}
+.col-12{flex:0 0 100%}
+
+/* Hero layout using CSS Grid */
+.hero{padding:var(--space-5) 0;background:linear-gradient(180deg, rgba(11,110,253,0.05), transparent)}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--grid-gap);align-items:center}
+.hero-content{grid-column:span 7}
+.hero-visual{grid-column:span 5;text-align:right}
+
+/* Breakpoints: 1440, 1200, 992, 768, 576 (mín. 5) */
+@media (max-width:1440px){.hero-content{grid-column:span 7}.hero-visual{grid-column:span 5}}
+@media (max-width:1200px){.hero-content{grid-column:span 8}.hero-visual{grid-column:span 4}}
+@media (max-width:992px){.hero-grid{grid-template-columns:repeat(8,1fr)}.hero-content{grid-column:span 8}.hero-visual{grid-column:span 8;text-align:left;margin-top:var(--space-3)}}
+@media (max-width:768px){.hero-grid{grid-template-columns:repeat(6,1fr)}.hero-content{grid-column:span 6}.hero-visual{grid-column:span 6}}
+@media (max-width:576px){.hero-grid{grid-template-columns:repeat(2,1fr)}.hero-content{grid-column:span 2}.hero-visual{grid-column:span 2}}
+
+/* Container responsive */
+@media (max-width:992px){.container{padding:var(--space-2)}}

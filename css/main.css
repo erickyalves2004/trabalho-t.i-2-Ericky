@@ -1,0 +1,9 @@
+/* main.css — importa módulos */
+@import "base.css";
+@import "layout.css";
+@import "components.css";
+@import "utilities.css";
+
+/* small visual polish */
+.actions{display:flex;gap:var(--space-2)}
+.card-meta{display:flex;gap:var(--space-2);align-items:center;justify-content:space-between}
